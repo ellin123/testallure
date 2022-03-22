@@ -3,8 +3,9 @@ pipeline{
     stages{ // 里面可以填充多个stage
         
         stage('testallure') {
-            steps{bat '''pytest test --alluredir ./report/allure_raw
-'''
+            steps{
+                echo "hello world"
+//                 bat '''pytest test --alluredir ./report/allure_raw'''
                 
             }
         }
